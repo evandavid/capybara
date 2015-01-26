@@ -162,70 +162,69 @@ module Capybara
       #     element.send_keys [:control, 'a'], :space   #=> value: ' '
       #
       # Symbols supported for keys
-      # :null         
-      # :cancel       
-      # :help         
-      # :backspace    
-      # :tab          
-      # :clear        
-      # :return       
-      # :enter        
-      # :shift        
-      # :left_shift   
-      # :control      
+      # :cancel
+      # :help
+      # :backspace
+      # :tab
+      # :clear
+      # :return
+      # :enter
+      # :shift        - alias of :left_shift
+      # :left_shift
+      # :control      - alias of :left_control
       # :left_control 
-      # :alt          
-      # :left_alt     
-      # :pause        
-      # :escape       
-      # :space        
-      # :page_up      
-      # :page_down    
-      # :end          
-      # :home         
-      # :left         
-      # :arrow_left   
-      # :up           
+      # :alt          - alias of :left_alt
+      # :left_alt
+      # :pause
+      # :escape
+      # :space
+      # :page_up
+      # :page_down
+      # :end
+      # :home
+      # :left         - alias of :arrow_left
+      # :arrow_left
+      # :up           - alias of :arrow_up
       # :arrow_up     
-      # :right        
-      # :arrow_right  
-      # :down         
+      # :right        - alias of :arrow_right
+      # :arrow_right
+      # :down         - alias of :arrow_down
       # :arrow_down   
-      # :insert       
-      # :delete       
-      # :semicolon    
-      # :equals       
-      # :numpad0      
-      # :numpad1      
-      # :numpad2      
-      # :numpad3      
-      # :numpad4      
-      # :numpad5      
-      # :numpad6      
-      # :numpad7      
-      # :numpad8      
-      # :numpad9      
-      # :multiply     
-      # :add          
-      # :separator    
-      # :subtract     
-      # :decimal      
-      # :divide       
-      # :f1           
-      # :f2           
-      # :f3           
-      # :f4           
-      # :f5           
-      # :f6           
-      # :f7           
-      # :f8           
-      # :f9           
-      # :f10          
-      # :f11          
-      # :f12          
+      # :insert
+      # :delete
+      # :semicolon
+      # :equals
+      # :numpad0
+      # :numpad1
+      # :numpad2
+      # :numpad3
+      # :numpad4
+      # :numpad5
+      # :numpad6
+      # :numpad7
+      # :numpad8
+      # :numpad9
+      # :multiply      - numeric keypad *
+      # :add           - numeric keypad +
+      # :separator     - numeric keypad 'separator' key ??
+      # :subtract      - numeric keypad -
+      # :decimal       - numeric keypad .
+      # :divide        - numeric keypad /
+      # :f1
+      # :f2
+      # :f3
+      # :f4
+      # :f5
+      # :f6
+      # :f7
+      # :f8
+      # :f9
+      # :f10
+      # :f11
+      # :f12
       # :meta         
-      # :command      
-      #               
+      # :command      - alias of :meta
+      #
       def send_keys(*args)
         synchronize { base.send_keys(*args) }
       end
