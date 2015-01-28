@@ -158,7 +158,7 @@ module Capybara
       # Examples:
       #
       #     element.send_keys "foo"                     #=> value: 'foo'
-      #     element.send_keys "tet", :arrow_left, "s"   #=> value: 'test'
+      #     element.send_keys "tet", :left, "s"   #=> value: 'test'
       #     element.send_keys [:control, 'a'], :space   #=> value: ' '
       #
       # Symbols supported for keys
@@ -169,12 +169,9 @@ module Capybara
       # :clear
       # :return
       # :enter
-      # :shift        - alias of :left_shift
-      # :left_shift
-      # :control      - alias of :left_control
-      # :left_control 
-      # :alt          - alias of :left_alt
-      # :left_alt
+      # :shift
+      # :control
+      # :alt
       # :pause
       # :escape
       # :space
@@ -182,14 +179,10 @@ module Capybara
       # :page_down
       # :end
       # :home
-      # :left         - alias of :arrow_left
-      # :arrow_left
-      # :up           - alias of :arrow_up
-      # :arrow_up     
-      # :right        - alias of :arrow_right
-      # :arrow_right
-      # :down         - alias of :arrow_down
-      # :arrow_down   
+      # :left
+      # :up
+      # :right
+      # :down
       # :insert
       # :delete
       # :semicolon
